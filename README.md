@@ -1,6 +1,5 @@
-[![Stories in Ready](https://badge.waffle.io/ThrashingCode/coder-swap.png?label=ready&title=Ready)](http://waffle.io/ThrashingCode/coder-swap)
-
-[ ![Codeship Status for Keartida/coder-swap](https://img.shields.io/codeship/3fedfdc0-bc70-0132-0cd4-5e51f10fddb0.svg)](https://codeship.com/projects/72441)
+[![Stories in Ready](https://badge.waffle.io/ThrashingCode/coder-swap.png?label=ready&title=Ready&style=flat-square)](http://waffle.io/ThrashingCode/coder-swap)
+[ ![Codeship Status for Keartida/coder-swap](https://img.shields.io/codeship/3fedfdc0-bc70-0132-0cd4-5e51f10fddb0.svg?style=flat-square)](https://codeship.com/projects/72441)
 
 
 
