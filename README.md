@@ -1,6 +1,9 @@
-![Coder Swap](http://photos.adron.me/photos/i-Jc4Lnkv/0/O/i-Jc4Lnkv.png)
-
 [![Stories in Ready](https://badge.waffle.io/ThrashingCode/coder-swap.png?label=ready&title=Ready)](http://waffle.io/ThrashingCode/coder-swap)
+[ ![Codeship Status for Keartida/coder-swap](https://img.shields.io/codeship/3fedfdc0-bc70-0132-0cd4-5e51f10fddb0.svg?style=plastic)](https://codeship.com/projects/72441)
+
+
+
+![Coder Swap](http://photos.adron.me/photos/i-Jc4Lnkv/0/O/i-Jc4Lnkv.png)
 
 ## Mission
 Provide an application for meeting, sharing with, and engaging other teams, learning from each other, and improving your team and other teams through coder swaps.
