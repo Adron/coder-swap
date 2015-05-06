@@ -1,9 +1,3 @@
-# My Application
-
-
-
-## Project Structure
-
 .
 ├── LICENSE
 ├── README.md
