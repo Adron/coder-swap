@@ -200,7 +200,7 @@
             <div class="nav-collapse">
                 <ul class="nav">
                     <li>
-                        <a class="current" href="index.html"><span aria-hidden="true" class="se7en-home"></span>Dashboard</a>
+                        <a href="index.html"><span aria-hidden="true" class="se7en-home"></span>Dashboard</a>
                     </li>
                     <li><a href="social.html">
                         <span aria-hidden="true" class="se7en-feed"></span>Social Feed</a>
@@ -263,7 +263,7 @@
                                 </p></a>
 
                             </li>
-                            <li><a href="file-upload.html">
+                            <li><a class="current" href="file-upload.html">
                                 <div class="notifications label label-warning">
                                     New
                                 </div>
@@ -407,445 +407,173 @@
     </div>
     <!-- End Navigation -->
     <div class="container-fluid main-content">
-        <!-- Statistics -->
+        <div class="page-title">
+            <h1>
+                Multiple File Upload
+            </h1>
+        </div>
         <div class="row">
             <div class="col-lg-12">
-                <div class="widget-container stats-container">
-                    <div class="col-md-3">
-                        <div class="number">
-                            <div class="icon globe"></div>
-                            86
-                            <small>%</small>
-                        </div>
-                        <div class="text">
-                            Overall growth
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="number">
-                            <div class="icon visitors"></div>
-                            613
-                        </div>
-                        <div class="text">
-                            Unique visitors
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="number">
-                            <div class="icon money"></div>
-                            <small>$</small>
-                            924
-                        </div>
-                        <div class="text">
-                            Sales
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="number">
-                            <div class="icon chat-bubbles"></div>
-                            325
-                        </div>
-                        <div class="text">
-                            New followers
-                        </div>
-                    </div>
-            </div>
-            </div>
-        </div>
-        <!-- End Statistics -->
-        <div class="row">
-            <!-- Weather -->
-            <div class="col-md-8">
-                <div class="widget-container weather">
-                    <div class="widget-content padded">
-                        <div class="row text-center">
-                            <div class="col-sm-6 col-md-6 col-lg-4 today">
-                                <p>
-                                    TODAY
-                                </p>
-                                <canvas class="skycons-element" data-skycons="RAIN" height="100" id="rain"
-                                        width="100"></canvas>
-                                <div class="number">
-                                    72
-                                    <small>&deg;</small>
-                                </div>
-                                <p class="location">
-                                    Washington, D.C.
-                                </p>
-                            </div>
-                            <div class="col-sm-2 hidden-xs">
-                                <p>
-                                    MON
-                                </p>
-                                <canvas class="skycons-element" data-skycons="CLEAR_DAY" height="60" id="clear-day"
-                                        width="60"></canvas>
-                                <div class="number">
-                                    86
-                                    <small>&deg;</small>
-                                </div>
-                            </div>
-                            <div class="col-sm-2 hidden-xs">
-                                <p>
-                                    TUE
-                                </p>
-                                <canvas class="skycons-element" data-skycons="RAIN" height="60" id="cloudy"
-                                        width="60"></canvas>
-                                <div class="number">
-                                    75
-                                    <small>&deg;</small>
-                                </div>
-                            </div>
-                            <div class="col-sm-2 hidden-xs">
-                                <p>
-                                    WED
-                                </p>
-                                <canvas class="skycons-element" data-skycons="PARTLY_CLOUDY_DAY" height="60"
-                                        id="partly-cloudy-day" width="60"></canvas>
-                                <div class="number">
-                                    82
-                                    <small>&deg;</small>
-                                </div>
-                            </div>
-                            <div class="col-sm-2 hidden-md hidden-sm hidden-xs">
-                                <p>
-                                    THU
-                                </p>
-                                <canvas class="skycons-element" data-skycons="SLEET" height="60" id="sleet"
-                                        width="60"></canvas>
-                                <div class="number">
-                                    64
-                                    <small>&deg;</small>
-                                </div>
-                            </div>
-                </div>
-                    </div>
-            </div>
-            </div>
-            <!-- end Weather --><!-- Bar Graph -->
-            <div class="col-md-4">
-                <div class="widget-container small">
-                    <div class="heading">
-                        <i class="fa fa-signal"></i>New sign ups<i class="fa fa-list pull-right"></i><i
-                            class="fa fa-refresh pull-right"></i>
-                    </div>
-                    <div class="widget-content padded">
-                        <div class="bar-chart-widget">
-                            <div class="chart-graph">
-                                <div id="barcharts">
-                                    Loading...
-                                </div>
-                                <ul class="chart-text-axis">
-                                    <li>
-                                        1
-                                    </li>
-                                    <li>
-                                        2
-                                    </li>
-                                    <li>
-                                        3
-                                    </li>
-                                    <li>
-                                        4
-                                    </li>
-                                    <li>
-                                        5
-                                    </li>
-                                    <li>
-                                        6
-                                    </li>
-                                    <li>
-                                        7
-                                    </li>
-                                    <li>
-                                        8
-                                    </li>
-                                    <li>
-                                        9
-                                    </li>
-                                    <li>
-                                        10
-                                    </li>
-                                    <li>
-                                        11
-                                    </li>
-                                    <li>
-                                        12
-                                    </li>
-                                    <li>
-                                        13
-                                    </li>
-                                    <li>
-                                        14
-                                    </li>
-                                </ul>
-                            </div>
-                </div>
-                    </div>
-            </div>
-            </div>
-            <!-- End Bar Graph -->
-        </div>
-        <div class="row">
-            <!-- Area Charts:Morris -->
-            <div class="col-md-6">
                 <div class="widget-container fluid-height">
-                    <div class="heading">
-                        <i class="fa fa-bar-chart-o"></i>Area Chart
-                    </div>
-                    <div class="widget-content padded text-center">
-                        <div class="graph-container">
-                            <div class="caption"></div>
-                            <div class="graph" id="hero-area"></div>
-                </div>
-                    </div>
-            </div>
-            </div>
-            <!-- Area Charts:Morris --><!-- Chat -->
-            <div class="col-md-6">
-                <div class="widget-container scrollable chat" style="height: 427px;">
-                    <div class="heading">
-                        <i class="fa fa-comments"></i>Chat Widget<i class="fa fa-smile-o pull-right"></i>
-                    </div>
                     <div class="widget-content padded">
-                        <ul>
-                            <li>
-                                <img width="30" height="30" src="images/avatar-male.jpg"/>
-
-                                <div class="bubble">
-                                    <a class="user-name" href="">John Smith</a>
-
-                                    <p class="message">
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque
-                                        volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh,
-                                        viverra non, semper suscipit, posuere a, pede.
-                                    </p>
-
-                                    <p class="time">
-                                        <strong>Today </strong>3:53 pm
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="current-user">
-                                <img width="30" height="30" src="images/avatar-female.jpg"/>
-
-                                <div class="bubble">
-                                    <a class="user-name" href="">Jane Smith</a>
-
-                                    <p class="message">
-                                        Donec odio. Quisque volutpat mattis eros.
-                                    </p>
-
-                                    <p class="time">
-                                        <strong>Today </strong>3:53 pm
-                                    </p>
-                                </div>
-                            </li>
-                            <li>
-                                <img width="30" height="30" src="images/avatar-male.jpg"/>
-
-                                <div class="bubble">
-                                    <a class="user-name" href="">John Smith</a>
-
-                                    <p class="message">
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque
-                                        volutpat mattis eros.
-                                    </p>
-
-                                    <p class="time">
-                                        <strong>Today </strong>3:53 pm
-                                    </p>
-                                </div>
-                            </li>
-                            <li>
-                                <img width="30" height="30" src="images/avatar-male.jpg"/>
-
-                                <div class="bubble">
-                                    <a class="user-name" href="">John Smith</a>
-
-                                    <p class="message">
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque
-                                        volutpat mattis eros.
-                                    </p>
-
-                                    <p class="time">
-                                        <strong>Today </strong>3:53 pm
-                                    </p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="post-message">
-                        <input class="form-control" placeholder="Write your message here…" type="text"><input
-                            type="submit" value="Send">
-                    </div>
-            </div>
-            </div>
-            <!-- End Chat -->
-        </div>
-        <div class="row">
-            <!-- Pie Graph 1 -->
-            <div class="col-lg-5">
-                <div class="widget-container fluid-height">
-                    <div class="heading">
-                        <i class="fa fa-bar-chart-o"></i>Donut Charts
-                    </div>
-                    <div class="widget-content clearfix">
-                        <div class="col-sm-6">
-                            <div class="pie-chart1 pie-chart pie-number" data-percent="87">
-                                87%
-                            </div>
+                        <div class="alert alert-info">
+                            <p>
+                                File Upload widget with multiple file selection, drag & drop support, progress bars,
+                                validation and preview images, audio and video for jQuery.<br>Supports cross-domain,
+                                chunked and resumable file uploads and client-side image resizing.<br>Works with any
+                                server-side platform (PHP, Python, Ruby on Rails, Java, Node.js, Go etc.) that supports
+                                standard HTML form file uploads.
+                            </p>
                         </div>
-                        <div class="col-sm-6">
-                            <div class="pie-chart2 pie-chart pie-number" data-percent="26">
-                                26%
+                        <form action="http://se7en.herokuapp.com/uploads" enctype="multipart/form-data" id="fileupload"
+                              method="POST">
+                            <noscript><input name="redirect" type="hidden"
+                                             value="http://blueimp.github.io/jQuery-File-Upload/"></noscript>
+                            <div class="row fileupload-buttonbar">
+                                <div class="col-lg-7">
+                                    <span class="btn btn-success fileinput-button"><i class="fa fa-plus"></i><span>Add files...</span><input
+                                            id="upload_file" multiple="" name="upload[file]" type="file"></span>
+                                    <button class="btn btn-primary start" type="submit"><i
+                                            class="fa fa-upload"></i><span>Start upload</span></button>
+                                    <button class="btn btn-warning cancel" type="reset"><i class="fa fa-ban"></i><span>Cancel upload</span>
+                                    </button>
+                                    <button class="btn btn-danger delete" type="button"><i
+                                            class="fa fa-trash-o"></i><span>Delete</span></button>
+                                    <label class="checkbox-inline"><input class="toggle" type="checkbox"><span>Select all</span></label>
+
+                                    <div class="fileupload-loading"></div>
+                                </div>
+                                <div class="col-lg-5 fileupload-progress fade">
+                                    <div aria-valuemax="100" aria-valuemin="0" class="progress progress-striped active"
+                                         role="progressbar">
+                                        <div class="progress-bar progress-bar-success" style="width:0%;"></div>
+                                    </div>
+                                    <div class="progress-extended">
+                                         
+                                    </div>
+                                </div>
                             </div>
-                </div>
+                            <table class="table table-striped" role="presentation">
+                                <tbody class="files"></tbody>
+                            </table>
+                        </form>
                     </div>
-            </div>
-            </div>
-            <div class="col-lg-7">
-                <div class="widget-container fluid-height">
-                    <!-- Table -->
-                    <table class="table table-filters">
-                        <tbody>
-                        <tr>
-                            <td class="filter-category blue">
-                                <div class="arrow-left"></div>
-                                <i class="fa fa-stethoscope"></i>
-                            </td>
-                            <td>
-                                National Distribution Co.
-                            </td>
-                            <td>
-                                $9204
-                            </td>
-                            <td class="hidden-xs">
-                                <div class="sparkslim">
-                                    50,55,60,40,30,35,30,20,25,30,40,20,15
-                                </div>
-                            </td>
-                            <td>
-                                <div class="danger">
-                                    -4%
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="filter-category green">
-                                <div class="arrow-left"></div>
-                                <i class="fa fa-coffee"></i>
-                            </td>
-                            <td>
-                                Star Organization Co.
-                            </td>
-                            <td>
-                                $23,890
-                            </td>
-                            <td class="hidden-xs">
-                                <div class="sparkslim">
-                                    5,10,15,50,80,50,40,30,50,60,70,75,75
-                                </div>
-                            </td>
-                            <td>
-                                <div class="success">
-                                    +12%
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="filter-category orange">
-                                <div class="arrow-left"></div>
-                                <i class="fa fa-gamepad"></i>
-                            </td>
-                            <td>
-                                Companysoft, LLC
-                            </td>
-                            <td>
-                                $10,995
-                            </td>
-                            <td class="hidden-xs">
-                                <div class="sparkslim">
-                                    100,100,80,70,40,20,20,40,50,60,70
-                                </div>
-                            </td>
-                            <td>
-                                <div class="success">
-                                    +5%
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="filter-category red">
-                                <div class="arrow-left"></div>
-                                <i class="fa fa-gift"></i>
-                            </td>
-                            <td>
-                                Craft Co.
-                            </td>
-                            <td>
-                                $6,790
-                            </td>
-                            <td class="hidden-xs">
-                                <div class="sparkslim">
-                                    5,10,15,20,30,40,80,100,120,120,140
-                                </div>
-                            </td>
-                            <td>
-                                <div class="success">
-                                    +26%
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="filter-category blue">
-                                <div class="arrow-left"></div>
-                                <i class="fa fa-stethoscope"></i>
-                            </td>
-                            <td>
-                                National Distribution Co.
-                            </td>
-                            <td>
-                                $9204
-                            </td>
-                            <td class="hidden-xs">
-                                <div class="sparkslim">
-                                    50,55,60,40,30,35,30,20,25,30,40,20,15
-                                </div>
-                            </td>
-                            <td>
-                                <div class="danger">
-                                    -4%
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="filter-category magenta">
-                                <div class="arrow-left"></div>
-                                <i class="fa fa-trophy"></i>
-                            </td>
-                            <td>
-                                Fastnation Co.
-                            </td>
-                            <td>
-                                $22,156
-                            </td>
-                            <td class="hidden-xs">
-                                <div class="sparkslim">
-                                    20,40,50,60,70,80,90,95,100,80,70,60
-                                </div>
-                            </td>
-                            <td>
-                                <div class="danger">
-                                    -4%
-                                </div>
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table>
                 </div>
             </div>
-            <!-- End Pie Graph 1 -->
         </div>
+        <script id="template-upload" type="text/x-tmpl">
+        {% for (var i=0, file; file=o.files[i]; i++) { %}
+            <tr class="template-upload fade">
+                <td>
+                    <span class="preview"></span>
+                </td>
+                <td>
+                    <p class="name">{%=file.name%}</p>
+                    <strong class="error text-danger"></strong>
+                </td>
+                <td>
+                    <p class="size">Processing...</p>
+                    <div class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="progress-bar progress-bar-success" style="width:0%;"></div></div>
+                </td>
+                <td>
+                    {% if (!i && !o.options.autoUpload) { %}
+                        <button class="btn btn-primary start" disabled>
+                            <i class="fa fa-upload"></i>
+                            <span>Start</span>
+                        </button>
+                    {% } %}
+                    {% if (!i) { %}
+                        <button class="btn btn-warning cancel">
+                            <i class="fa fa-ban"></i>
+                            <span>Cancel</span>
+                        </button>
+                    {% } %}
+                </td>
+            </tr>
+        {% } %}
+
+
+        </script>
+        <!-- The template to display files available for download -->
+        <script id="template-download" type="text/x-tmpl">
+        {% for (var i=0, file; file=o.files[i]; i++) { %}
+            <tr class="template-download fade">
+                <td>
+                    <span class="preview">
+                        {% if (file.thumbnailUrl) { %}
+                            <a href="{%=file.url%}" title="{%=file.name%}" download="{%=file.name%}" data-gallery><img src="{%=file.thumbnailUrl%}"></a>
+                        {% } %}
+                    </span>
+                </td>
+                <td>
+                    <p class="name">
+                        {% if (file.url) { %}
+                            <a href="{%=file.url%}" title="{%=file.name%}" download="{%=file.name%}" {%=file.thumbnailUrl?'data-gallery':''%}>{%=file.name%}</a>
+                        {% } else { %}
+                            <span>{%=file.name%}</span>
+                        {% } %}
+                    </p>
+                    {% if (file.error) { %}
+                        <div><span class="label label-danger">Error</span> {%=file.error%}</div>
+                    {% } %}
+                </td>
+                <td>
+                    <span class="size">{%=o.formatFileSize(file.size)%}</span>
+                </td>
+                <td>
+                    {% if (file.deleteUrl) { %}
+                        <button class="btn btn-danger delete" data-type="{%=file.deleteType%}" data-url="{%=file.deleteUrl%}"{% if (file.deleteWithCredentials) { %} data-xhr-fields='{"withCredentials":true}'{% } %}>
+                            <i class="fa fa-trash-o"></i>
+                            <span>Delete</span>
+                        </button>
+                        <label class='checkbox-inline'>
+                          <input type="checkbox" name="delete" value="1" class="toggle">
+                          <span></span>
+                        </label>
+                    {% } else { %}
+                        <button class="btn btn-warning cancel">
+                            <i class="fa fa-ban"></i>
+                            <span>Cancel</span>
+                        </button>
+                    {% } %}
+                </td>
+            </tr>
+        {% } %}
+        
+        <script src="javascripts/fileupload/jquery.ui.widget.js">
+
+        </script>
+        <!-- The Templates plugin is included to render the upload/download listings -->
+        <script src="http://blueimp.github.io/JavaScript-Templates/js/tmpl.min.js"></script>
+        <!-- The Load Image plugin is included for the preview images and image resizing functionality -->
+        <script src="http://blueimp.github.io/JavaScript-Load-Image/js/load-image.min.js"></script>
+        <!-- The Canvas to Blob plugin is included for image resizing functionality -->
+        <script src="http://blueimp.github.io/JavaScript-Canvas-to-Blob/js/canvas-to-blob.min.js"></script>
+        <!-- blueimp Gallery script -->
+        <script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+        <!-- The Iframe Transport is required for browsers without support for XHR file uploads -->
+        <script src="javascripts/fileupload/jquery.iframe-transport.js"></script>
+        <!-- The basic File Upload plugin -->
+        <script src="javascripts/fileupload/jquery.fileupload.js"></script>
+        <!-- The File Upload processing plugin -->
+        <script src="javascripts/fileupload/jquery.fileupload-process.js"></script>
+        <!-- The File Upload image preview & resize plugin -->
+        <script src="javascripts/fileupload/jquery.fileupload-image.js"></script>
+        <!-- The File Upload audio preview plugin -->
+        <script src="javascripts/fileupload/jquery.fileupload-audio.js"></script>
+        <!-- The File Upload video preview plugin -->
+        <script src="javascripts/fileupload/jquery.fileupload-video.js"></script>
+        <!-- The File Upload validation plugin -->
+        <script src="javascripts/fileupload/jquery.fileupload-validate.js"></script>
+        <!-- The File Upload user interface plugin -->
+        <script src="javascripts/fileupload/jquery.fileupload-ui.js"></script>
+        <!-- The main application script -->
+        <script src="javascripts/fileupload/fileupload-main.js"></script>
+        <!-- The XDomainRequest Transport is included for cross-domain file deletion for IE 8 and IE 9 -->
+        <!--[if (gte IE 8)&(lt IE 10)]>
+        <script src="js/cors/jquery.xdr-transport.js"></script>
+        <![endif]-->
+        <!-- end: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
     </div>
 </div>
 <div class="style-selector">
@@ -857,6 +585,7 @@
             <option value="fluid">Fluid</option>
             <option value="boxed">Boxed</option>
         </select>
+
         <h2>
             Navigation Style
         </h2>
@@ -864,6 +593,7 @@
             <option value="top">Top</option>
             <option value="left">Left</option>
         </select>
+
         <h2>
             Color Options
         </h2>

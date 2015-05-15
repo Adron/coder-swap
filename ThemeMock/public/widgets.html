@@ -200,12 +200,12 @@
             <div class="nav-collapse">
                 <ul class="nav">
                     <li>
-                        <a class="current" href="index.html"><span aria-hidden="true" class="se7en-home"></span>Dashboard</a>
+                        <a href="index.html"><span aria-hidden="true" class="se7en-home"></span>Dashboard</a>
                     </li>
                     <li><a href="social.html">
                         <span aria-hidden="true" class="se7en-feed"></span>Social Feed</a>
                     </li>
-                    <li class="dropdown"><a data-toggle="dropdown" href="#">
+                    <li class="dropdown"><a data-toggle="dropdown" class="current" href="#">
                         <span aria-hidden="true" class="se7en-star"></span>UI Features<b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li><a href="buttons.html">
@@ -236,7 +236,7 @@
                                 <a href="components.html">Components</a>
                             </li>
                             <li>
-                                <a href="widgets.html">Widgets</a>
+                                <a class="current" href="widgets.html">Widgets</a>
                             </li>
                             <li>
                                 <a href="typo.html">Typography</a>
@@ -407,95 +407,40 @@
     </div>
     <!-- End Navigation -->
     <div class="container-fluid main-content">
-        <!-- Statistics -->
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="widget-container stats-container">
-                    <div class="col-md-3">
-                        <div class="number">
-                            <div class="icon globe"></div>
-                            86
-                            <small>%</small>
-                        </div>
-                        <div class="text">
-                            Overall growth
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="number">
-                            <div class="icon visitors"></div>
-                            613
-                        </div>
-                        <div class="text">
-                            Unique visitors
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="number">
-                            <div class="icon money"></div>
-                            <small>$</small>
-                            924
-                        </div>
-                        <div class="text">
-                            Sales
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="number">
-                            <div class="icon chat-bubbles"></div>
-                            325
-                        </div>
-                        <div class="text">
-                            New followers
-                        </div>
-                    </div>
-            </div>
-            </div>
+        <div class="page-title">
+            <h1>
+                Widgets
+            </h1>
         </div>
-        <!-- End Statistics -->
         <div class="row">
             <!-- Weather -->
-            <div class="col-md-8">
+            <div class="col-lg-12">
                 <div class="widget-container weather">
                     <div class="widget-content padded">
                         <div class="row text-center">
-                            <div class="col-sm-6 col-md-6 col-lg-4 today">
-                                <p>
-                                    TODAY
-                                </p>
-                                <canvas class="skycons-element" data-skycons="RAIN" height="100" id="rain"
-                                        width="100"></canvas>
-                                <div class="number">
-                                    72
-                                    <small>&deg;</small>
-                                </div>
-                                <p class="location">
-                                    Washington, D.C.
-                                </p>
-                            </div>
-                            <div class="col-sm-2 hidden-xs">
+                            <div class="col-sm-2 col-xs-4">
                                 <p>
                                     MON
                                 </p>
-                                <canvas class="skycons-element" data-skycons="CLEAR_DAY" height="60" id="clear-day"
+                                <canvas class="skycons-element" data-skycons="RAIN" height="60" id="clear-day"
                                         width="60"></canvas>
                                 <div class="number">
                                     86
                                     <small>&deg;</small>
                                 </div>
                             </div>
-                            <div class="col-sm-2 hidden-xs">
+                            <div class="col-sm-2 col-xs-4">
                                 <p>
                                     TUE
                                 </p>
-                                <canvas class="skycons-element" data-skycons="RAIN" height="60" id="cloudy"
+                                <canvas class="skycons-element" data-skycons="CLOUDY" height="60" id="cloudy"
                                         width="60"></canvas>
                                 <div class="number">
                                     75
                                     <small>&deg;</small>
                                 </div>
                             </div>
-                            <div class="col-sm-2 hidden-xs">
+                            <div class="col-sm-2 col-xs-4">
                                 <p>
                                     WED
                                 </p>
@@ -506,105 +451,456 @@
                                     <small>&deg;</small>
                                 </div>
                             </div>
-                            <div class="col-sm-2 hidden-md hidden-sm hidden-xs">
+                            <div class="col-sm-2 hidden-xs">
                                 <p>
                                     THU
                                 </p>
-                                <canvas class="skycons-element" data-skycons="SLEET" height="60" id="sleet"
+                                <canvas class="skycons-element" data-skycons="SNOW" height="60" id="snow"
                                         width="60"></canvas>
                                 <div class="number">
                                     64
                                     <small>&deg;</small>
                                 </div>
                             </div>
-                </div>
+                            <div class="col-sm-2 hidden-xs">
+                                <p>
+                                    FRI
+                                </p>
+                                <canvas class="skycons-element" data-skycons="WIND" height="60" id="wind"
+                                        width="60"></canvas>
+                                <div class="number">
+                                    57
+                                    <small>&deg;</small>
+                                </div>
+                            </div>
+                            <div class="col-sm-2 hidden-xs">
+                                <p>
+                                    SAT
+                                </p>
+                                <canvas class="skycons-element" data-skycons="SNOW" height="60" id="snow2"
+                                        width="60"></canvas>
+                                <div class="number">
+                                    32
+                                    <small>&deg;</small>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                </div>
             </div>
-            </div>
-            <!-- end Weather --><!-- Bar Graph -->
-            <div class="col-md-4">
-                <div class="widget-container small">
+        </div>
+        <div class="row">
+            <!-- Task List -->
+            <div class="col-lg-6">
+                <div class="widget-container scrollable list task-widget">
                     <div class="heading">
-                        <i class="fa fa-signal"></i>New sign ups<i class="fa fa-list pull-right"></i><i
+                        <i class="fa fa-list"></i>Task list<i class="fa fa-plus pull-right"></i>
+                    </div>
+                    <div class="widget-content">
+                        <ul>
+                            <li>
+                                <label><input checked="checked" class="task-input" type="checkbox"><span></span>
+
+                                    <div class="label label-success pull-right">
+                                        Approved
+                                    </div>
+                                    Distribute latest marketing</label>
+                            </li>
+                            <li>
+                                <label><input class="task-input" type="checkbox"><span></span>
+
+                                    <div class="label label-success pull-right">
+                                        Approved
+                                    </div>
+                                    Create the latest mockup</label>
+                            </li>
+                            <li>
+                                <label><input class="task-input" type="checkbox"><span></span>
+
+                                    <div class="label label-warning pull-right">
+                                        Pending
+                                    </div>
+                                    Code the latest features</label>
+                            </li>
+                            <li>
+                                <label><input checked="checked" class="task-input" type="checkbox"><span></span>
+
+                                    <div class="label label-danger pull-right">
+                                        Rejected
+                                    </div>
+                                    Coffee time</label>
+                            </li>
+                            <li>
+                                <label><input checked="checked" class="task-input" type="checkbox"><span></span>
+
+                                    <div class="label label-success pull-right">
+                                        Approved
+                                    </div>
+                                    Distribute latest marketing</label>
+                            </li>
+                            <li>
+                                <label><input class="task-input" type="checkbox"><span></span>
+
+                                    <div class="label label-success pull-right">
+                                        Approved
+                                    </div>
+                                    Pick up lunch</label>
+                            </li>
+                            <li>
+                                <label><input class="task-input" type="checkbox"><span></span>
+
+                                    <div class="label label-danger pull-right">
+                                        Rejected
+                                    </div>
+                                    Send out e-blast</label>
+                            </li>
+                            <li>
+                                <label><input class="task-input" type="checkbox"><span></span>
+
+                                    <div class="label label-warning pull-right">
+                                        Pending
+                                    </div>
+                                    Ask for a raise</label>
+                            </li>
+                            <li>
+                                <label><input class="task-input" type="checkbox"><span></span>
+
+                                    <div class="label label-warning pull-right">
+                                        Pending
+                                    </div>
+                                    Coffe time pt. 2</label>
+                            </li>
+                            <li>
+                                <label><input class="task-input" type="checkbox"><span></span>
+
+                                    <div class="label label-success pull-right">
+                                        Approved
+                                    </div>
+                                    Bug fixes</label>
+                            </li>
+                            <li>
+                                <label><input class="task-input" type="checkbox"><span></span>
+
+                                    <div class="label label-success pull-right">
+                                        Approved
+                                    </div>
+                                    Happy hour!!!</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- End Task List --><!-- Ratings -->
+            <div class="col-lg-6">
+                <div class="widget-container scrollable list rating-widget">
+                    <div class="heading">
+                        <i class="fa fa-comment"></i>Recent Ratings<i class="fa fa-refresh pull-right"></i>
+                    </div>
+                    <div class="widget-content">
+                        <ul>
+                            <li>
+                                <div class="reviewer-info">
+                                    <div class="star-rating pull-right">
+                                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                            class="fa fa-star-empty"></i><i class="fa fa-star-empty"></i>
+                                    </div>
+                                    <img width="30" height="30" src="images/avatar-male.jpg"/><a href="">John
+                                    Smith</a><em> on 8/20/2013</em>
+                                </div>
+                                <div class="review-text">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consecteter adipiscing elit, sed diam nonummy nibh
+                                        euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="reviewer-info">
+                                    <div class="star-rating pull-right">
+                                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                            class="fa fa-star-empty"></i><i class="fa fa-star-empty"></i>
+                                    </div>
+                                    <img width="30" height="30" src="images/avatar-male.jpg"/><a href="">John
+                                    Smith</a><em> on 8/20/2013</em>
+                                </div>
+                                <div class="review-text">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consecteter adipiscing elit, sed diam nonummy.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="reviewer-info">
+                                    <div class="star-rating pull-right">
+                                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                            class="fa fa-star-empty"></i><i class="fa fa-star-empty"></i>
+                                    </div>
+                                    <img width="30" height="30" src="images/avatar-male.jpg"/><a href="">John
+                                    Smith</a><em> on 8/20/2013</em>
+                                </div>
+                                <div class="review-text">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque
+                                        volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh,
+                                        viverra non, semper suscipit, posuere a, pede.
+                                    </p>
+
+                                    <p>
+                                        Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit
+                                        amet orci. Aenean dignissim pellentesque felis.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="reviewer-info">
+                                    <div class="star-rating pull-right">
+                                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                            class="fa fa-star-empty"></i><i class="fa fa-star-empty"></i>
+                                    </div>
+                                    <img width="30" height="30" src="images/avatar-male.jpg"/><a href="">John
+                                    Smith</a><em> on 8/20/2013</em>
+                                </div>
+                                <div class="review-text">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consecteter adipiscing elit, sed diam nonummy nibh
+                                        euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="reviewer-info">
+                                    <div class="star-rating pull-right">
+                                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                            class="fa fa-star-empty"></i><i class="fa fa-star-empty"></i>
+                                    </div>
+                                    <img width="30" height="30" src="images/avatar-male.jpg"/><a href="">John
+                                    Smith</a><em> on 8/20/2013</em>
+                                </div>
+                                <div class="review-text">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consecteter adipiscing elit, sed diam nonummy.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="reviewer-info">
+                                    <div class="star-rating pull-right">
+                                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                            class="fa fa-star-empty"></i><i class="fa fa-star-empty"></i>
+                                    </div>
+                                    <img width="30" height="30" src="images/avatar-male.jpg"/><a href="">John
+                                    Smith</a><em> on 8/20/2013</em>
+                                </div>
+                                <div class="review-text">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque
+                                        volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh,
+                                        viverra non, semper suscipit, posuere a, pede.
+                                    </p>
+
+                                    <p>
+                                        Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit
+                                        amet orci. Aenean dignissim pellentesque felis.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- End Ratings -->
+        </div>
+        <div class="row">
+            <!-- Map -->
+            <div class="col-lg-6">
+                <div class="widget-container">
+                    <div class="heading">
+                        <i class="fa fa-map-marker"></i>Interactive global map<i class="fa fa-plus pull-right"></i><i
+                            class="fa fa-refresh pull-right"></i>
+                    </div>
+                    <div class="widget-content">
+                        <div class="map" id="vmap" style="height: 450px;"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Map --><!-- Rollodex -->
+            <div class="col-lg-6">
+                <div class="widget-container scrollable list rollodex">
+                    <div class="heading">
+                        <i class="fa fa-comment"></i>Rollodex<i class="fa fa-plus pull-right"></i><i
+                            class="fa fa-search pull-right"></i><i class="fa fa-refresh pull-right"></i>
+                    </div>
+                    <div class="widget-content">
+                        <div class="roll-title">
+                            A
+                        </div>
+                        <ul>
+                            <li>
+                                <img width="30" height="30" src="images/avatar-female.png"/><a href="">Joan Andrews</a>
+                            </li>
+                            <li>
+                                <img width="30" height="30" src="images/avatar-male.jpg"/><a href="">Jose Anderson</a>
+                            </li>
+                            <li>
+                                <img width="30" height="30" src="images/avatar-male2.png"/><a href="">Phil Aaron</a>
+                            </li>
+                        </ul>
+                        <div class="roll-title">
+                            B
+                        </div>
+                        <ul>
+                            <li>
+                                <img width="30" height="30" src="images/avatar-female.png"/><a href="">Samatha Brown</a>
+                            </li>
+                            <li>
+                                <img width="30" height="30" src="images/avatar-male.jpg"/><a href="">Chris Baker</a>
+                            </li>
+                            <li>
+                                <img width="30" height="30" src="images/avatar-female2.png"/><a href="">Kristin
+                                Blues</a>
+                            </li>
+                        </ul>
+                        <div class="roll-title">
+                            C
+                        </div>
+                        <ul>
+                            <li>
+                                <img width="30" height="30" src="images/avatar-male.jpg"/><a href="">Adam Carter</a>
+                            </li>
+                            <li>
+                                <img width="30" height="30" src="images/avatar-male2.png"/><a href="">Greg Campbell</a>
+                            </li>
+                            <li>
+                                <img width="30" height="30" src="images/avatar-female2.png"/><a href="">Judy Collins</a>
+                            </li>
+                        </ul>
+                        <div class="roll-title">
+                            D
+                        </div>
+                        <ul>
+                            <li>
+                                <img width="30" height="30" src="images/avatar-male.jpg"/><a href="">John Smith</a>
+                            </li>
+                        </ul>
+                        <div class="roll-title">
+                            E
+                        </div>
+                        <ul>
+                            <li>
+                                <img width="30" height="30" src="images/avatar-male.jpg"/><a href="">John Smith</a>
+                            </li>
+                            <li>
+                                <img width="30" height="30" src="images/avatar-male.jpg"/><a href="">John Smith</a>
+                            </li>
+                        </ul>
+                        <div class="roll-title">
+                            F
+                        </div>
+                        <div class="roll-title">
+                            G
+                        </div>
+                        <div class="roll-title">
+                            H
+                        </div>
+                        <div class="roll-title">
+                            I
+                        </div>
+                        <div class="roll-title">
+                            J
+                        </div>
+                        <ul>
+                            <li>
+                                <img width="30" height="30" src="images/avatar-male.jpg"/><a href="">John Smith</a>
+                            </li>
+                            <li>
+                                <img width="30" height="30" src="images/avatar-male.jpg"/><a href="">John Smith</a>
+                            </li>
+                            <li>
+                                <img width="30" height="30" src="images/avatar-male.jpg"/><a href="">John Smith</a>
+                            </li>
+                        </ul>
+                        <div class="roll-title">
+                            K
+                        </div>
+                        <div class="roll-title">
+                            L
+                        </div>
+                        <div class="roll-title">
+                            M
+                        </div>
+                        <div class="roll-title">
+                            N
+                        </div>
+                        <div class="roll-title">
+                            O
+                        </div>
+                        <div class="roll-title">
+                            P
+                        </div>
+                        <div class="roll-title">
+                            Q
+                        </div>
+                        <div class="roll-title">
+                            R
+                        </div>
+                        <div class="roll-title">
+                            S
+                        </div>
+                        <ul>
+                            <li>
+                                <img width="30" height="30" src="images/avatar-male.jpg"/><a href="">John Smith</a>
+                            </li>
+                            <li>
+                                <img width="30" height="30" src="images/avatar-male2.png"/><a href="">Brian Sullivan</a>
+                            </li>
+                            <li>
+                                <img width="30" height="30" src="images/avatar-male.jpg"/><a href="">Chris Stevens</a>
+                            </li>
+                        </ul>
+                        <div class="roll-title">
+                            T
+                        </div>
+                        <div class="roll-title">
+                            U
+                        </div>
+                        <div class="roll-title">
+                            V
+                        </div>
+                        <div class="roll-title">
+                            W
+                        </div>
+                        <div class="roll-title">
+                            X
+                        </div>
+                        <div class="roll-title">
+                            Y
+                        </div>
+                        <div class="roll-title">
+                            Z
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Rollodex -->
+        </div>
+        <div class="row">
+            <!-- Calendar -->
+            <div class="col-lg-6">
+                <div class="widget-container">
+                    <div class="heading">
+                        <i class="fa fa-calendar"></i>Calendar<i class="fa fa-plus pull-right"></i><i
                             class="fa fa-refresh pull-right"></i>
                     </div>
                     <div class="widget-content padded">
-                        <div class="bar-chart-widget">
-                            <div class="chart-graph">
-                                <div id="barcharts">
-                                    Loading...
-                                </div>
-                                <ul class="chart-text-axis">
-                                    <li>
-                                        1
-                                    </li>
-                                    <li>
-                                        2
-                                    </li>
-                                    <li>
-                                        3
-                                    </li>
-                                    <li>
-                                        4
-                                    </li>
-                                    <li>
-                                        5
-                                    </li>
-                                    <li>
-                                        6
-                                    </li>
-                                    <li>
-                                        7
-                                    </li>
-                                    <li>
-                                        8
-                                    </li>
-                                    <li>
-                                        9
-                                    </li>
-                                    <li>
-                                        10
-                                    </li>
-                                    <li>
-                                        11
-                                    </li>
-                                    <li>
-                                        12
-                                    </li>
-                                    <li>
-                                        13
-                                    </li>
-                                    <li>
-                                        14
-                                    </li>
-                                </ul>
-                            </div>
+                        <div id="calendar"></div>
+                    </div>
                 </div>
-                    </div>
             </div>
-            </div>
-            <!-- End Bar Graph -->
-        </div>
-        <div class="row">
-            <!-- Area Charts:Morris -->
-            <div class="col-md-6">
-                <div class="widget-container fluid-height">
+            <!-- End Calendar --><!-- Chat -->
+            <div class="col-lg-6">
+                <div class="widget-container scrollable chat">
                     <div class="heading">
-                        <i class="fa fa-bar-chart-o"></i>Area Chart
-                    </div>
-                    <div class="widget-content padded text-center">
-                        <div class="graph-container">
-                            <div class="caption"></div>
-                            <div class="graph" id="hero-area"></div>
-                </div>
-                    </div>
-            </div>
-            </div>
-            <!-- Area Charts:Morris --><!-- Chat -->
-            <div class="col-md-6">
-                <div class="widget-container scrollable chat" style="height: 427px;">
-                    <div class="heading">
-                        <i class="fa fa-comments"></i>Chat Widget<i class="fa fa-smile-o pull-right"></i>
+                        <i class="fa fa-comments"></i>Chat Widget<i class="fa fa-smile pull-right"></i>
                     </div>
                     <div class="widget-content padded">
                         <ul>
@@ -676,175 +972,11 @@
                     </div>
                     <div class="post-message">
                         <input class="form-control" placeholder="Write your message here…" type="text"><input
-                            type="submit" value="Send">
+                            class="btn btn-primary" type="submit" value="Post">
                     </div>
-            </div>
+                </div>
             </div>
             <!-- End Chat -->
-        </div>
-        <div class="row">
-            <!-- Pie Graph 1 -->
-            <div class="col-lg-5">
-                <div class="widget-container fluid-height">
-                    <div class="heading">
-                        <i class="fa fa-bar-chart-o"></i>Donut Charts
-                    </div>
-                    <div class="widget-content clearfix">
-                        <div class="col-sm-6">
-                            <div class="pie-chart1 pie-chart pie-number" data-percent="87">
-                                87%
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="pie-chart2 pie-chart pie-number" data-percent="26">
-                                26%
-                            </div>
-                </div>
-                    </div>
-            </div>
-            </div>
-            <div class="col-lg-7">
-                <div class="widget-container fluid-height">
-                    <!-- Table -->
-                    <table class="table table-filters">
-                        <tbody>
-                        <tr>
-                            <td class="filter-category blue">
-                                <div class="arrow-left"></div>
-                                <i class="fa fa-stethoscope"></i>
-                            </td>
-                            <td>
-                                National Distribution Co.
-                            </td>
-                            <td>
-                                $9204
-                            </td>
-                            <td class="hidden-xs">
-                                <div class="sparkslim">
-                                    50,55,60,40,30,35,30,20,25,30,40,20,15
-                                </div>
-                            </td>
-                            <td>
-                                <div class="danger">
-                                    -4%
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="filter-category green">
-                                <div class="arrow-left"></div>
-                                <i class="fa fa-coffee"></i>
-                            </td>
-                            <td>
-                                Star Organization Co.
-                            </td>
-                            <td>
-                                $23,890
-                            </td>
-                            <td class="hidden-xs">
-                                <div class="sparkslim">
-                                    5,10,15,50,80,50,40,30,50,60,70,75,75
-                                </div>
-                            </td>
-                            <td>
-                                <div class="success">
-                                    +12%
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="filter-category orange">
-                                <div class="arrow-left"></div>
-                                <i class="fa fa-gamepad"></i>
-                            </td>
-                            <td>
-                                Companysoft, LLC
-                            </td>
-                            <td>
-                                $10,995
-                            </td>
-                            <td class="hidden-xs">
-                                <div class="sparkslim">
-                                    100,100,80,70,40,20,20,40,50,60,70
-                                </div>
-                            </td>
-                            <td>
-                                <div class="success">
-                                    +5%
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="filter-category red">
-                                <div class="arrow-left"></div>
-                                <i class="fa fa-gift"></i>
-                            </td>
-                            <td>
-                                Craft Co.
-                            </td>
-                            <td>
-                                $6,790
-                            </td>
-                            <td class="hidden-xs">
-                                <div class="sparkslim">
-                                    5,10,15,20,30,40,80,100,120,120,140
-                                </div>
-                            </td>
-                            <td>
-                                <div class="success">
-                                    +26%
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="filter-category blue">
-                                <div class="arrow-left"></div>
-                                <i class="fa fa-stethoscope"></i>
-                            </td>
-                            <td>
-                                National Distribution Co.
-                            </td>
-                            <td>
-                                $9204
-                            </td>
-                            <td class="hidden-xs">
-                                <div class="sparkslim">
-                                    50,55,60,40,30,35,30,20,25,30,40,20,15
-                                </div>
-                            </td>
-                            <td>
-                                <div class="danger">
-                                    -4%
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="filter-category magenta">
-                                <div class="arrow-left"></div>
-                                <i class="fa fa-trophy"></i>
-                            </td>
-                            <td>
-                                Fastnation Co.
-                            </td>
-                            <td>
-                                $22,156
-                            </td>
-                            <td class="hidden-xs">
-                                <div class="sparkslim">
-                                    20,40,50,60,70,80,90,95,100,80,70,60
-                                </div>
-                            </td>
-                            <td>
-                                <div class="danger">
-                                    -4%
-                                </div>
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <!-- End Pie Graph 1 -->
         </div>
     </div>
 </div>
@@ -857,6 +989,7 @@
             <option value="fluid">Fluid</option>
             <option value="boxed">Boxed</option>
         </select>
+
         <h2>
             Navigation Style
         </h2>
@@ -864,6 +997,7 @@
             <option value="top">Top</option>
             <option value="left">Left</option>
         </select>
+
         <h2>
             Color Options
         </h2>
