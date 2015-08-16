@@ -18,15 +18,15 @@ Simple right? Well, sort of. In idea and principal, but it hasn't always been ea
     ├── LICENSE
     ├── README.md
     ├── client
-    │   └── README.md
+    │   └── README.md
     ├── package.json
     ├── proj-tree.md
     └── server
         ├── boot
-        │   ├── authentication.js
-        │   ├── explorer.js
-        │   ├── rest-api.js
-        │   └── root.js
+        │   ├── authentication.js
+        │   ├── explorer.js
+        │   ├── rest-api.js
+        │   └── root.js
         ├── config.json
         ├── datasources.json
         ├── middleware.json
