@@ -4,7 +4,8 @@
   "license": "Apache 2.0",
   "main": "server/server.js",
   "scripts": {
-    "pretest": "jshint ."
+    "pretest": "jshint .",
+    "start": "server/server.js"
   },
   "dependencies": {
     "compression": "^1.0.3",
