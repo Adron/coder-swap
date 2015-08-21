@@ -2,14 +2,5 @@
   "db": {
     "name": "db",
     "connector": "memory"
-  },
-  "codering": {
-    "host": "localhost",
-    "port": 5432,
-    "database": "codering",
-    "username": "codering",
-    "password": "codering",
-    "name": "codering",
-    "connector": "postgresql"
   }
 }
